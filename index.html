@@ -1,274 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Marxia Studios creates educational media, digital experiences, games, apps, and technology." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Marxia Studios creates educational media, games, apps, stories, and technology.">
+  <meta name="theme-color" content="#050914">
   <title>Marxia Studios</title>
-
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/marxia-icon-32.png">
+  <link rel="apple-touch-icon" href="assets/marxia-icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#home" class="brand" aria-label="Marxia Studios home">
-        <span class="brand-mark" aria-hidden="true">
-          <span class="brand-m">M</span>
-          <span class="play-triangle"></span>
-        </span>
-        <span class="brand-text">
-          <strong>MARXIA</strong>
-          <small>STUDIOS</small>
-        </span>
-      </a>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <img src="assets/marxia-icon.png" alt="Marxia Studios">
+      <span><strong>MARXIA</strong><small>STUDIOS</small></span>
+    </a>
+    <button class="menu" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#divisions">Divisions</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="pill">Contact</a>
+    </nav>
+  </div>
+</header>
 
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#divisions">What We Create</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-glow hero-glow-one"></div>
-      <div class="hero-glow hero-glow-two"></div>
-
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">CREATE • INNOVATE • INSPIRE</p>
-          <h1>Creating smarter digital experiences.</h1>
-          <p class="hero-text">
-            Marxia Studios creates educational media, interactive content,
-            games, apps, and technology designed to inspire curiosity and creativity.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#divisions">Explore Our Work</a>
-            <a class="button button-secondary" href="#contact">Start a Conversation</a>
-          </div>
-
-          <div class="hero-points">
-            <span>Educational Content</span>
-            <span>Games & Apps</span>
-            <span>Technology</span>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="Marxia Studios visual identity">
-          <div class="visual-card visual-main">
-            <div class="visual-logo">
-              <span class="visual-m">M</span>
-              <span class="visual-play"></span>
-            </div>
-            <p>MARXIA</p>
-            <small>STUDIOS</small>
-          </div>
-
-          <div class="floating-card floating-one">
-            <span>01</span>
-            <strong>Learn</strong>
-          </div>
-
-          <div class="floating-card floating-two">
-            <span>02</span>
-            <strong>Create</strong>
-          </div>
-        </div>
+<main>
+<section class="hero" id="home">
+  <div class="grid"></div>
+  <div class="orb one"></div><div class="orb two"></div>
+  <div class="container hero-layout">
+    <div class="hero-copy">
+      <p class="eyebrow">CREATE • INNOVATE • INSPIRE</p>
+      <h1>Ideas made to move, teach, and grow.</h1>
+      <p class="lead">Marxia Studios creates educational media, digital products, games, apps, stories, and technology for curious minds and modern audiences.</p>
+      <div class="actions">
+        <a class="btn primary" href="#divisions">Explore the Studio</a>
+        <a class="btn secondary" href="#projects">View Projects</a>
       </div>
-    </section>
-
-    <section class="section section-light" id="about">
-      <div class="container split-layout">
-        <div>
-          <p class="section-label">ABOUT MARXIA STUDIOS</p>
-          <h2>A studio built for ideas that can grow.</h2>
-        </div>
-
-        <div class="about-copy">
-          <p>
-            Marxia Studios is a creative and technology company focused on
-            producing digital experiences that educate, entertain, and empower.
-          </p>
-          <p>
-            We are building a brand that can grow across video, apps, games,
-            books, learning tools, and new digital products without being limited
-            to one platform.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="divisions">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">WHAT WE CREATE</p>
-          <h2>One studio. Multiple possibilities.</h2>
-          <p>
-            Marxia Studios is designed to support several creative divisions as
-            the company grows.
-          </p>
-        </div>
-
-        <div class="cards-grid">
-          <article class="feature-card">
-            <span class="feature-number">01</span>
-            <h3>Educational Media</h3>
-            <p>
-              Short-form videos, quizzes, stories, and learning experiences
-              created for curious young audiences and families.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <span class="feature-number">02</span>
-            <h3>Games & Apps</h3>
-            <p>
-              Interactive games and practical applications that combine
-              creativity, learning, and useful technology.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <span class="feature-number">03</span>
-            <h3>Digital Products</h3>
-            <p>
-              Websites, software tools, AI-powered experiences, and digital
-              products built for people and businesses.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <span class="feature-number">04</span>
-            <h3>Stories & Publishing</h3>
-            <p>
-              Original stories, books, characters, and creative properties
-              developed for future media and merchandise.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="projects">
-      <div class="container">
-        <div class="section-heading section-heading-dark">
-          <p class="section-label">CURRENT DIRECTION</p>
-          <h2>Building the first Marxia Studios experiences.</h2>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card project-featured">
-            <div class="project-tag">COMING FIRST</div>
-            <h3>Marxia Learning</h3>
-            <p>
-              Educational quizzes, puzzles, animal facts, science content, and
-              interactive challenges for YouTube, TikTok, and future apps.
-            </p>
-            <a href="#contact">Follow the project <span>→</span></a>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">IN DEVELOPMENT</div>
-            <h3>Marxia Games</h3>
-            <p>
-              Fun, accessible games and digital learning experiences for web and mobile.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">FUTURE DIVISION</div>
-            <h3>Marxia Tech</h3>
-            <p>
-              Technology products, websites, automation, and software solutions.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="container cta-box">
-        <div>
-          <p class="section-label">THE VISION</p>
-          <h2>More than a channel. A growing creative studio.</h2>
-        </div>
-        <p>
-          Marxia Studios is being built to create content, products, and
-          experiences that can live across multiple platforms and reach audiences worldwide.
-        </p>
-      </div>
-    </section>
-
-    <section class="section section-contact" id="contact">
-      <div class="container contact-grid">
-        <div>
-          <p class="section-label">CONTACT</p>
-          <h2>Let’s create something meaningful.</h2>
-          <p>
-            For partnerships, collaborations, project inquiries, or updates
-            about Marxia Studios, send us a message.
-          </p>
-        </div>
-
-        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" required />
-          </label>
-
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" required />
-          </label>
-
-          <label>
-            Message
-            <textarea name="message" rows="5" placeholder="Tell us about your idea" required></textarea>
-          </label>
-
-          <button type="submit" class="button button-primary">Send Message</button>
-          <p class="form-note">
-            Replace <code>your-form-id</code> in <code>index.html</code> with your Formspree form ID.
-          </p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <div class="brand footer-brand">
-        <span class="brand-mark" aria-hidden="true">
-          <span class="brand-m">M</span>
-          <span class="play-triangle"></span>
-        </span>
-        <span class="brand-text">
-          <strong>MARXIA</strong>
-          <small>STUDIOS</small>
-        </span>
-      </div>
-
-      <p>© <span id="year"></span> Marxia Studios. All rights reserved.</p>
-
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="privacy.html">Privacy</a>
+      <div class="meta">
+        <span>Educational Media</span><span>Games & Apps</span><span>Technology</span><span>Stories</span>
       </div>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <div class="logo-stage">
+      <div class="halo"></div>
+      <div class="logo-card"><img src="assets/marxia-icon.png" alt="Marxia Studios icon"></div>
+      <div class="wordmark"><strong>MARXIA</strong><span>STUDIOS</span></div>
+      <div class="badge b1"><small>01</small><b>CREATE</b></div>
+      <div class="badge b2"><small>02</small><b>INNOVATE</b></div>
+      <div class="badge b3"><small>03</small><b>INSPIRE</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="light section" id="about">
+  <div class="container split">
+    <div>
+      <p class="label">ABOUT MARXIA STUDIOS</p>
+      <h2>A creative studio built beyond one platform.</h2>
+    </div>
+    <div class="copy">
+      <p>Marxia Studios is a modern media and technology company creating digital experiences that educate, entertain, and empower.</p>
+      <p>The studio is designed to grow across video, games, apps, publishing, interactive learning, and practical technology products.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark section" id="divisions">
+  <div class="container">
+    <div class="heading">
+      <p class="label">STUDIO DIVISIONS</p>
+      <h2>One identity. Multiple creative worlds.</h2>
+      <p>Each division can grow independently while remaining part of the Marxia Studios brand.</p>
+    </div>
+    <div class="cards">
+      <article><span>01</span><em>LAUNCHING FIRST</em><h3>Marxia Learning</h3><p>Educational quizzes, puzzles, science, animal facts, and interactive content for young audiences and families.</p></article>
+      <article><span>02</span><em>IN DEVELOPMENT</em><h3>Marxia Games</h3><p>Accessible games and interactive experiences made for web, mobile, education, and entertainment.</p></article>
+      <article><span>03</span><em>FUTURE DIVISION</em><h3>Marxia Tech</h3><p>Digital products, AI tools, websites, automation, and software built to solve real problems.</p></article>
+      <article><span>04</span><em>FUTURE DIVISION</em><h3>Marxia Stories</h3><p>Original stories, books, characters, and creative properties for future media and publishing.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="light section" id="projects">
+  <div class="container">
+    <div class="project-head">
+      <div><p class="label">CURRENT PROJECTS</p><h2>Building the first Marxia experiences.</h2></div>
+      <p>The first phase focuses on content, audience-building, and reusable digital experiences that can later expand into apps, games, and products.</p>
+    </div>
+    <div class="projects">
+      <article class="featured">
+        <div class="visual"><img src="assets/marxia-icon.png" alt=""></div>
+        <div class="content"><span>FIRST RELEASE</span><h3>Marxia Learning</h3><p>A growing library of quizzes, riddles, animal challenges, science facts, and educational entertainment.</p></div>
+      </article>
+      <article><span>NEXT</span><h3>Interactive Web Games</h3><p>Simple browser-based games connected to Marxia educational content.</p></article>
+      <article><span>LATER</span><h3>Digital Learning Products</h3><p>Printable activities, books, mobile apps, and learning tools.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="vision">
+  <div class="container vision-box">
+    <img src="assets/marxia-icon.png" alt="">
+    <div><p class="label">THE VISION</p><h2>More than a channel. A studio that can become an ecosystem.</h2></div>
+    <p>Every video, game, app, story, and product should feel connected to one recognizable brand: Marxia Studios.</p>
+  </div>
+</section>
+
+<section class="dark section" id="contact">
+  <div class="container contact">
+    <div>
+      <p class="label">CONTACT</p>
+      <h2>Let’s build something worth remembering.</h2>
+      <p class="muted">For partnerships, collaborations, project inquiries, or updates about Marxia Studios, send a message.</p>
+    </div>
+    <form action="https://formspree.io/f/your-form-id" method="post">
+      <div class="row">
+        <label>Name<input name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+      </div>
+      <label>Subject<input name="subject" required></label>
+      <label>Message<textarea name="message" rows="6" required></textarea></label>
+      <button class="btn primary" type="submit">Send Message</button>
+      <small>Replace <code>your-form-id</code> in index.html with your Formspree form ID.</small>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container foot">
+    <a class="brand" href="#home"><img src="assets/marxia-icon.png" alt=""><span><strong>MARXIA</strong><small>STUDIOS</small></span></a>
+    <p>© <span id="year"></span> Marxia Studios. All rights reserved.</p>
+    <div><a href="#about">About</a><a href="#contact">Contact</a><a href="privacy.html">Privacy</a></div>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
